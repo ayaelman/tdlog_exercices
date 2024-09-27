@@ -28,12 +28,15 @@ fixed_tests_False = (
     ( "spam",    "eggs"  )
 )
 """
+
+
+import unittest
+
+
 def solution(string, ending):
     return string.endswith(ending)
 
-import unittest
-def solution(string, ending):
-    return string.endswith(ending)
+
 
 class TestSolution(unittest.TestCase):
     

@@ -20,6 +20,6 @@ class TestExo3(unittest.TestCase):
             lines = input2.readlines()
 
         with open("sample/output2.txt") as output2:
-            expected = output2.read().strip()  # Again, using .strip() to ensure correct comparison
+            expected = output2.read().strip()
 
         self.assertEqual(expected, processLines(lines))
